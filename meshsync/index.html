@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+  GitHub Pages serves a project site at the repository's name, exactly as it is spelled, so
+  /MeshSync is the only path that answers. Lowercase is what people type. This sends them there.
+
+  Renaming the repository would have done the same thing and moved the path, and the apt
+  repository lives under it - every sources.list already written says /MeshSync, and GitHub does
+  not redirect an old project path. So: a redirect here, and the repository stays where it is.
+
+  Browsers only. apt cannot follow this, and does not need to - it is pointed at /MeshSync.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesh Sync</title>
+<link rel="canonical" href="https://x20surya.me/MeshSync/">
+<meta http-equiv="refresh" content="0; url=/MeshSync/">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 34rem; margin: 6rem auto; padding: 0 1.5rem; color: #262523;
+         background: #F7F6F3; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+  a { color: #2F7A6B; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1C1A19; color: #F0EEE9; }
+    a { color: #6FBFAC; }
+  }
+</style>
+<script>location.replace("/MeshSync/" + location.search + location.hash);</script>
+</head>
+<body>
+  <p>Mesh Sync lives at <a href="/MeshSync/">x20surya.me/MeshSync</a>.</p>
+  <p>Taking you there now.</p>
+</body>
+</html>
